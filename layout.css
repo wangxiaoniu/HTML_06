@@ -1,0 +1,132 @@
+/*
+***** author:wangrao
+**** 报纸排版  ****
+**** 2017.2.27 ****
+*/
+@charset"utf-8";
+body{
+	padding: 0;
+	margin:0;
+}
+h1{
+	padding: 0;
+	margin:0;
+}
+.clearfix{
+	overflow: auto;
+	_zoom:1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.main{
+	width: 892px;
+	height: 1386px;
+	margin: 0 auto;
+	padding:0 44px 0 44px;
+}
+/*头部*/
+.header{
+	width: 892px;
+	height: 61px;
+	border-bottom: 2px solid #938E8B;
+	font-family: "黑体";
+
+}
+.header h1.logo{
+	width: 110px;
+	height: 61px;
+	color: #fff;
+	background: #D55D5C;
+	text-align: center;
+	float: left;
+}
+.header p{
+	float: right;
+	margin:0;
+	height: 19px;
+	padding-top:42px; 
+	font-size: 12px;
+	color: #d45d5c;
+}
+.header h1 small{
+	display: block;
+	font-weight: normal;
+	font-size: 12px;
+}
+/*banner*/
+.banner{
+	background: #fff;
+	width: 892px;
+	height: 301px;
+	padding:34px 0 0px 0;
+}
+.banner .banner_img{
+	width: 641px;
+	height: 301px;
+	background: #ccc;
+	float: left;
+}
+.banner .banner_info{
+	background: lightblue;
+	width: 203px;
+	height: 301px;
+	float: right;
+}
+/*新闻*/
+.news{
+	background: lightyellow;
+	width: 641px;
+	height: 168px;
+	margin-top: 40px;
+}
+.news_what,.news_when{
+	margin-right: 27px;
+	height: 168px;
+}
+/*what信息*/
+.news_what{
+	width: 228px;
+	background: lightpink;
+	float: left;
+}
+.news_when{
+	width: 204px;
+	background: #ccc;
+	float: left;
+}
+.news_how{
+	background: lightblue;
+	width: 155px;
+	height: 168px;
+	float: left;
+}
+/*焦点*/
+.focus{
+	background: #999;
+	height:607px;
+	margin-top: 74px; 
+}
+.focus .focus_left{
+	width: 415px;
+	height: 607px;
+	background: lightgreen;
+	float: left;
+	margin-right: 19px;
+}
+.focus .focus_right{
+	width: 458px;
+	height: 607px;
+	background: lightblue;
+	float: right;
+}
+/*底部*/
+.footer{
+	background: #fc0;
+	height: 61px;
+	margin-top: 39px;
+}
