@@ -8,7 +8,7 @@ body{
 	padding: 0;
 	margin:0;
 }
-h1{
+h1,h2,h3,h4,h5{
 	padding: 0;
 	margin:0;
 }
@@ -46,10 +46,12 @@ h1{
 	float: left;
 }
 .header p{
-	float: right;
 	margin:0;
 	height: 19px;
 	padding-top:42px; 
+}
+.header p,.footer p{
+	float: right;
 	font-size: 12px;
 	color: #d45d5c;
 }
@@ -77,14 +79,13 @@ h1{
 	width: 191px;
 	height: 301px;
 	opacity: 0.4;
-	filter: alpha(opacity=40%);
+	filter: alpha(opacity=40);
 	position: absolute;
 }
 .banner_imgl{
 	background:#006633; 
 	left: 0;
 	top: 0;
-
 }
 .banner_imgr{
 	background:#FF4D4D; 
@@ -203,7 +204,7 @@ div.info-footer div.info-footerr small{
 	color:#231815;
 	font-family: "Microsoft Yahei";
 	opacity: 0.7;
-	filter: alpha(opacity=70%);
+	filter: alpha(opacity=70);
 }
 /*how信息*/
 .introduce_how{
@@ -229,31 +230,142 @@ div.info-footer div.info-footerr small{
 .introduce_how p.percent i{
 	color:#cd4a48;
 	opacity: 0.7;
-	filter: alpha(opacity=70%);
+	filter: alpha(opacity=70);
 }
 
 /*焦点*/
 .focus{
-	background: #999;
 	height:607px;
 	margin-top: 74px; 
 }
+
 .focus .focus_left{
 	width: 415px;
 	height: 607px;
-	background: lightgreen;
 	float: left;
 	margin-right: 19px;
 }
+.focus_left .focus_header{
+	height: 152px;
+	font-family: "黑体";
+	border-bottom: 2px solid #11456b;
+}
+.focus_left .focus_header_i{
+	width: 355px;
+	height: 89px;
+
+}
+.focus_left .focus_header_i h2{
+	font-size: 72px;
+	color: #f5e327;
+	font-style: italic;
+	line-height: 44px;
+	margin-top: 3px;
+}
+.focus_left .focus_header_i span{
+	font-size: 42px;
+	color: #11456b;
+	font-style: normal;
+	padding-left: 19px;
+	line-height: 16px;
+}
+.focus_header p{
+	font-size: 33px;
+	line-height: 62px;
+	color: #11456b;
+	font-weight: bold;
+	margin:0;
+}
+.focus_left_txt{
+	height: 410px;
+	padding:20px 0px;
+	overflow: hidden;
+}
+.focus_left_txt p{
+	margin:0;
+}
+.focus_left_txt .text{
+	height: 396px;
+	margin:0;
+}
+.focus_left_txt .text .pic{
+	float: right;
+	width: 193px;
+	height: 300px;
+}
+.focus_left_txt .text img{
+	display: block;
+	margin-left: 20px;
+}
+.focus_left_txt p{
+	font-size: 12px;
+	line-height: 16px;
+	color: #767777;
+	font-family: "宋体";
+}
+.focus_left_txt p em{
+	font-style: normal;
+	font-size: 70px;
+	line-height: 72px;
+	color: #f5e327;
+	float: left;
+	font-family:"Microsoft Yahei";
+}
+.focus_left_txt .second-p,.focus_left_txt .endp{
+	margin:0;
+	text-indent: 2em;
+
+}
+/*焦点图右边*/
 .focus .focus_right{
 	width: 458px;
 	height: 607px;
-	background: lightblue;
 	float: right;
+}
+.focus_img{
+	width: 458px;
+	height: 275px;
+	background: url(images/mao.jpg) no-repeat left top;
+	position: relative;
+}
+.focus_title{
+	width: 458px;
+	height: 61px;
+	background:rgba(108,106,117,0.6);
+	font-family: "Microsoft Yahei";
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+}
+.focus_title h2{
+	margin-left: 61px;
+	font-size: 26px;
+	height: 44px;
+	line-height: 44px;
+	margin-top: 8px;
+	border-left: 3px solid #72b16a;
+	text-indent: 12px;
+	color: #fff;
+	font-weight: normal;
+}
+.focus_title h2 i{
+	font-size: 12px;
+	color: #72b16a;
+	letter-spacing: 140%;
+}
+.focus_list{
+	width: 458px;
+	height: 318px;
+	margin-top: 14px;
+	background: #EEEED6;
 }
 /*底部*/
 .footer{
-	background: #fc0;
-	height: 61px;
+	border-top:1px solid #938e8c;
+	height: 60px;
 	margin-top: 39px;
+}
+.footer p{
+	padding: 0;
+	margin:0;
 }
