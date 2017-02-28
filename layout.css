@@ -33,7 +33,7 @@ h1{
 .header{
 	width: 892px;
 	height: 61px;
-	border-bottom: 2px solid #938E8B;
+	border-bottom: 2px solid #938E8C;
 	font-family: "黑体";
 
 }
@@ -68,43 +68,170 @@ h1{
 .banner .banner_img{
 	width: 641px;
 	height: 301px;
-	background: #ccc;
+	background: url(images/banner.jpg) no-repeat left top;
 	float: left;
+	position: relative;
+
+}
+.banner_imgl,.banner_imgr{
+	width: 191px;
+	height: 301px;
+	opacity: 0.4;
+	filter: alpha(opacity=40%);
+	position: absolute;
+}
+.banner_imgl{
+	background:#006633; 
+	left: 0;
+	top: 0;
+
+}
+.banner_imgr{
+	background:#FF4D4D; 
+	right: 0;
+	top: 0;
 }
 .banner .banner_info{
-	background: lightblue;
 	width: 203px;
-	height: 301px;
+	height: 299px;
 	float: right;
+	border-top:2px solid #cc8091;
+	font-family: "Microsoft Yahei";
 }
-/*新闻*/
-.news{
-	background: lightyellow;
+.banner .banner_info h3{
+	padding:0;
+	margin:0;
+	line-height: 40px;
+	font-size: 24px;
+	color:#000;
+}
+.info-header{
+	height: 91px;
+}
+.info-header p.info-con{
+	margin:0;
+	font-size: 12px;
+	line-height: 10px;
+	color: #676767;
+	font-family: "楷体";
+
+}
+.banner .banner_info p.info-middle{
+	margin:0;
+	padding: 0;
+	height: 116px;
+	padding-top: 23px;
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;
+	margin-left: -15px;
+}
+.banner .banner_info div.info-footer{
+	color:#cc8091;
+	height: 68px;
+	overflow: hidden;
+}
+.banner .banner_info div.info-footer .info-footerl{
+	width: 84px;
+	line-height: 55px;
+	font-size: 55px;
+	padding-top: 17px;
+	float: left;
+}
+.banner .banner_info div.info-footer .info-footerr{
+	font-size:21px;
+	font-style: normal;
+	float: left;
+	width: 113px;
+	padding-top: 6px;
+	padding-left: 0px;
+}
+div.info-footer div.info-footerr small{
+	font-size: 12px;
+	line-height: 12px;
+	display: block;
+
+}
+/*介绍*/
+.introduce{
 	width: 641px;
 	height: 168px;
 	margin-top: 40px;
 }
-.news_what,.news_when{
+.introduce p{
+	height: 128px;
+	font-size: 12px;
+	line-height: 16px;
+	text-overflow: ellipsis;/*超出文本省略号显示*/
+	overflow: hidden;/*溢出隐藏，超出文本省略号显示标配*/
+	display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+	-webkit-box-orient: vertical;/*从上到下垂直排列子元素*/
+	-webkit-line-clamp:8;/*不是css的规范属性，需要配合以上两个属性，表示显示行数*/
+}
+.introduce h5{
+	padding:0;
+	margin:0;
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+}
+.introduce_what,.introduce_when{
 	margin-right: 27px;
 	height: 168px;
 }
 /*what信息*/
-.news_what{
+.introduce_what{
 	width: 228px;
-	background: lightpink;
 	float: left;
 }
-.news_when{
+.introduce_what h5 a{
+	color: #418c59;
+}
+.introduce_what p{
+	color:#767777;
+	font-family: "宋体";
+}
+/*when信息*/
+.introduce_when{
 	width: 204px;
-	background: #ccc;
 	float: left;
 }
-.news_how{
-	background: lightblue;
+.introduce_when h5 a{
+	color:#d2994f;
+}
+.introduce_when p{
+	color:#231815;
+	font-family: "Microsoft Yahei";
+	opacity: 0.7;
+	filter: alpha(opacity=70%);
+}
+/*how信息*/
+.introduce_how{
 	width: 155px;
 	height: 168px;
 	float: left;
 }
+.introduce_how h5 a{
+	color:#cc7680;
+}
+.introduce .introduce_how p.text{
+	height: 80px;
+	line-height: 25px;
+	font-family: "Microsoft Yahei"; 
+	margin-bottom: 0px;
+}
+.introduce_how p.percent{
+	padding:0;
+	margin:0;
+	width: 100px;
+	font-family: "Microsoft Yahei";
+}
+.introduce_how p.percent i{
+	color:#cd4a48;
+	opacity: 0.7;
+	filter: alpha(opacity=70%);
+}
+
 /*焦点*/
 .focus{
 	background: #999;
