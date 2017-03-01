@@ -390,6 +390,7 @@ div.info-footer div.info-footerr small{
 }
 .focus_list ul li a em{
 	font-size: 12px;
+	line-height: 22px;
 	float: right;
 }
 .focus_list .sm_section{
@@ -440,6 +441,45 @@ div.info-footer div.info-footerr small{
 	padding-left: 2px;
 }
 
+blockquote{
+	color: #d45b5c;
+	padding:0;
+	margin:0;
+	width: 164px;
+	height: 116px;
+	font-size: 14px;
+	position: absolute;
+	right: 20px;
+	bottom:40px;
+	font-family: "黑体";
+}
+/*引号*/
+blockquote:after{
+	content: '“';
+	color: #d45b5c;
+	position: absolute;
+	left: -40px;
+	top: 18px;
+	font-size: 72px;
+	line-height: 26px;
+}
+
+blockquote:before{
+	content: '”';
+	color: #d45b5c;
+	position: absolute;
+	right: -35px;
+	bottom:-25px;
+	font-size: 72px;
+	line-height: 26px;
+}
+blockquote p{
+	margin:0;
+	padding-top: 8px;
+	text-indent: 3em;
+	font-style: italic;
+	color: #5a5b5b;
+}
 /*底部*/
 .footer{
 	border-top:1px solid #938e8c;
