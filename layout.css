@@ -358,7 +358,88 @@ div.info-footer div.info-footerr small{
 	height: 318px;
 	margin-top: 14px;
 	background: #EEEED6;
+	position: relative;
 }
+.focus_list ul{
+	list-style-type: none;
+	padding: 0;
+	width: 409px;
+	height: 120px;
+	margin-left: 30px;
+	font-family: "宋体";
+	padding-top: 10px;
+}
+.focus_list ul li{
+	padding-top: 20px;	
+}
+.focus_list ul li:before{
+	display: inline-block;
+	height: 0;
+	content: "";
+	border: 5px solid #0D4568;
+	border-top: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+.focus_list ul li a{
+	padding-left: 4px;
+	color:#5a5b5b;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: left;
+}
+.focus_list ul li a em{
+	font-size: 12px;
+	float: right;
+}
+.focus_list .sm_section{
+	width: 260px;
+	height: 160px;
+	background: #D55D5C;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.section_info{
+	width: 238px;
+	height:86px;
+	margin:41px 12px 35px 12px;
+	color: #fff;
+}
+.section_info_l{
+	width: 66px;
+	height: 86px;
+	border-right: 2px solid #fff;
+	font-size: 110px;
+	font-family: "Microsoft Yahei";
+	line-height: 86px;
+
+	float: left;
+}
+.section_info_l span{
+		text-align: center;
+}
+.section_info_text{
+	width: 166px;
+	padding: 8px 0;
+	height: 70px;
+	float: right;
+}
+.section_info_text h2{
+	font-size:21px;
+	font-style: italic;
+	font-family: "黑体";
+	font-weight: normal;
+	line-height: 24px;
+	
+}
+.section_info_text p{
+	padding:0;
+	margin:0;
+	font-size: 12px;
+	padding-left: 2px;
+}
+
 /*底部*/
 .footer{
 	border-top:1px solid #938e8c;
